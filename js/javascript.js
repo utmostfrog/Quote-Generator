@@ -17,11 +17,11 @@ var quotes = [
 
 function newQuote() {
 var randomNumber = Math.floor(Math.random() * (quotes.length));
-document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber][0];
 }
 
-$(function() {
-  $('.home').click(function() {
-    $(this).css('background-image', 'url(img/tabs3.png)');
-  });
-}):
+//  $(function() {
+//   $('.home').click(function() {
+//     $(this).css('background-image', 'url(img/tabs3.png)');
+//   });
+// }):
