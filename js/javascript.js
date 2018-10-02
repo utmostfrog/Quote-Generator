@@ -90,7 +90,10 @@ let myArtistObjects = [
 
  function newQuote() {
  var randomNumber = Math.floor(Math.random() * (myArtistObjects.length));
- document.getElementById('quoteDisplay').innerHTML = myArtistObjects[randomNumber][1];
+ document.getElementById('quoteDisplay').innerHTML = myArtistObjects[randomNumber].quote;
+ document.getElementById('artistName').innerHTML = myArtistObjects[randomNumber].artistName;
+ document.getElementById('artistPic').innerHTML = myArtistObjects[randomNumber].imgURL[1];
+ document.getElementById('artPic').style.backgroundImage = myArtistObjects[randomNumber].imgURL[0];
  }
 
 
